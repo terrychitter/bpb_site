@@ -31,7 +31,7 @@ const BlobCrowd = () => {
   const blobs = Array.from({ length: numberOfBlobs }, () => ({
     startX: Math.random() * 100, // Random start position (0% to 100%)
     initialDirection:
-      Math.random() > 0.5 ? ("left" as "left") : ("right" as "right"),
+      Math.random() > 0.5 ? ("left" as const) : ("right" as const),
     duration:
       Math.pow(Math.random(), 2) * (maxDuration - minDuration) + minDuration, // Adjusted duration distribution
   }));

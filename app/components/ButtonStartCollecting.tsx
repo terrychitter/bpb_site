@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import Link from "next/link";
 import config from "@/src/config/config";
+import Image from "next/image";
 
 const StartCollectingButton: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const StartCollectingButton: React.FC = () => {
           color: "#2081E2",
         }}
         endIcon={
-          <img
+          <Image
             src="/opensea.svg"
             alt="Opensea"
             style={{ width: 20, height: 20 }}

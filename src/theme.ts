@@ -1,5 +1,5 @@
 'use client';
-import { Components, createTheme, PaletteOptions } from '@mui/material/styles';
+import { Components, createTheme } from '@mui/material/styles';
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 import config from './config/config';
 
