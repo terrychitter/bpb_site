@@ -1,0 +1,55 @@
+{
+  "name": "Your Collection #45",
+  "description": "Just blobs being blobs.",
+  "image": "ipfs://NewUriToReplace/45.pn",
+  "dna": "2ccd7d7042f9bcf7b4ed524b56b7f9093326c214",
+  "edition": 45,
+  "date": 1689072590057,
+  "seller_fee_basis_points": 500,
+  "collection": {
+    "name": "Big Plumpy Blobs",
+    "family": "Blobs"
+  },
+  "properties": {
+    "files": [
+      {
+        "uri": "image.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "0xA81445431Faa51baB4d2e9BD4Ee613C92FD017Ca",
+        "share": 100
+      }
+    ]
+  },
+  "attributes": [
+    {
+      "trait_type": "Backgrounds",
+      "value": "gradient (2)"
+    },
+    {
+      "trait_type": "Shadows",
+      "value": "shadow"
+    },
+    {
+      "trait_type": "Outlines",
+      "value": "body_default"
+    },
+    {
+      "trait_type": "Skins",
+      "value": "skin_lime"
+    },
+    {
+      "trait_type": "Expressions",
+      "value": "57"
+    },
+    {
+      "trait_type": "Head Wear",
+      "value": "head_party_hat"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

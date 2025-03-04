@@ -4,18 +4,18 @@ import {
   Button,
   ButtonGroup,
   Container,
-  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
 import React from "react";
 import { motion } from "framer-motion";
-import StartCollectingButton from "./components/ButtonStartCollecting";
-import SocialMediaLinks from "./components/GroupSocialMedia";
-import BlobCrowd from "./components/BlobCrowd/BlobCrowd";
+import StartCollectingButton from "../src/components/ButtonStartCollecting";
+import SocialMediaLinks from "../src/components/GroupSocialMedia";
+import BlobCrowd from "../src/components/BlobCrowd/BlobCrowd";
 import Link from "next/link";
-import RandomTagline from "./components/RandomTagline";
+import RandomTagline from "../src/components/RandomTagline";
 import config from "@/src/config/config";
+import LogoText from "../src/components/LogoText";
 
 interface DotsProps {
   color: string;
@@ -85,26 +85,7 @@ const HomePage = () => {
             <Dots color={theme.palette.success.main} />
             <Dots color={theme.palette.secondary.main} />
           </Box>
-          {/* Heading */}
-          <Box sx={{ marginBottom: theme.spacing(3) }}>
-            <Typography
-              variant="h1"
-              sx={{
-                fontWeight: "bold",
-                wordWrap: "break-word",
-                letterSpacing: "2px",
-              }}
-            >
-              <span style={{ color: theme.palette.primary.main }}>B</span>
-              ig&nbsp;
-              <span style={{ color: theme.palette.success.main }}>P</span>
-              lumpy&nbsp;
-              <span style={{ color: theme.palette.secondary.main }}>B</span>
-              lobs
-            </Typography>
-          </Box>
-
-          {/* Dots */}
+          <LogoText />
           <Box
             sx={{
               display: "flex",
@@ -134,7 +115,6 @@ const HomePage = () => {
             <Link href="/gallery">
               <Button color="success">{config.text.home.galleryNavText}</Button>
             </Link>
-
             <StartCollectingButton />
           </ButtonGroup>
         </motion.div>
