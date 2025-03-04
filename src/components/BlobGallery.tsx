@@ -11,7 +11,7 @@ const BlobGallery = () => {
   React.useEffect(() => {
     const fetchBlobData = async () => {
       const data: BlobJsonType[] = [];
-      for (let i = 1; i <= 250; i++) {
+      for (let i = 1; i <= 40; i++) {
         const response = await fetch(`/blobs.json/${i}.json`);
         const json = await response.json();
         data.push(json);
@@ -53,6 +53,7 @@ const BlobGallery = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        overflowY: "auto", // Keep this to allow scrolling
         height: "100vh", // Keep this to match your design
       }}
     >
