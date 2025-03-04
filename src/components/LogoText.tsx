@@ -4,7 +4,8 @@ import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
 
 interface LogoTextProps {
-  color?: boolean;
+  colored?: boolean;
+  color?: string;
   boxProps?: React.ComponentProps<typeof Box>;
   typographyProps?: React.ComponentProps<typeof Typography>;
 }
@@ -12,14 +13,16 @@ interface LogoTextProps {
 const LogoText: React.FC<LogoTextProps> = ({
   boxProps,
   typographyProps,
-  color = true,
+  colored = true,
+  color = null,
 }) => {
   const theme = useTheme();
   return (
-    <Box sx={{ marginBottom: theme.spacing(3), ...boxProps }}>
+    <Box {...boxProps} sx={{ marginBottom: theme.spacing(3) }}>
       <Typography
         variant="h1"
         sx={{
+          color: color ? color : "inherit",
           fontWeight: "bold",
           wordWrap: "break-word",
           letterSpacing: "2px",
@@ -28,18 +31,20 @@ const LogoText: React.FC<LogoTextProps> = ({
       >
         <span
           style={{
-            color: color ? theme.palette.primary.main : "inherit",
+            color: colored ? theme.palette.primary.main : "inherit",
           }}
         >
           B
         </span>
         ig&nbsp;
-        <span style={{ color: color ? theme.palette.success.main : "inherit" }}>
+        <span
+          style={{ color: colored ? theme.palette.success.main : "inherit" }}
+        >
           P
         </span>
         lumpy&nbsp;
         <span
-          style={{ color: color ? theme.palette.secondary.main : "inherit" }}
+          style={{ color: colored ? theme.palette.secondary.main : "inherit" }}
         >
           B
         </span>
