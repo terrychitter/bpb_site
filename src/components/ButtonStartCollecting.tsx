@@ -1,11 +1,11 @@
 import { Button } from "@mui/material";
-import Link from "next/link";
 import config from "@/src/config/config";
 import Image from "next/image";
+import CustomNextLink from "./StylesComponents/CustomLink";
 
 const StartCollectingButton: React.FC = () => {
   return (
-    <Link href={config.links.openseaCollectionPage} passHref>
+    <CustomNextLink href={config.links.openseaCollectionPage} passHref>
       <Button
         sx={{
           color: "#2081E2",
@@ -16,7 +16,7 @@ const StartCollectingButton: React.FC = () => {
       >
         {config.text.home.openseaNavText}
       </Button>
-    </Link>
+    </CustomNextLink>
   );
 };
 

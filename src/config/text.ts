@@ -60,6 +60,22 @@ const text = {
     galleryNavText: "Check Gallery",
     openseaNavText: "Start Collecting",
     taglineLoadingText: "Loading...",
+    aboutSectionTitle: "Welcome the Big Plumpy Blobs!",
+    aboutSectionBody: `The Big Plumpy Blobs crash-landed on Earth, convinced that wearing random accessories makes them perfectly human. After accidentally destroying their homeworld, Gelatopia, they’re determined to save Earth from the same fate—despite their hilariously terrible disguises. Earthlings play along, trading them even sillier outfits, while the blobs do their best to "blend in" and fix the planet… however poorly they interpret both.`,
+    loreSectionTitle: "Where did they come from??",
+    loreSectionBody: "Learn the Lore of the Blobs!",
+    loreSectionButtonText: "Discover",
+    gallerySectionTitle: "Meet them all",
+    gallerySectionBody:
+      "Check out the gallery and meet all the precious blobs.",
+    gallerySectionButtonText: "Check Out",
+  },
+  mainFooter: {
+    socialMediaHeadingText: "Join Us",
+    copyrightText: `COPYRIGHT ${new Date().getFullYear()}–All Rights Reserved`,
+    legalButtonPrivacyPolicyText: "Privacy Policy",
+    legalButtonTermsOfUseText: "Terms of Use",
+    legalButtonIPRightsText: "IP Rights",
   },
 };
 

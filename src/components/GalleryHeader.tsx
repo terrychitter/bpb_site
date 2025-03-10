@@ -1,16 +1,20 @@
-import { Box, useTheme } from "@mui/material";
-import React from "react";
-import LogoText from "./LogoText";
+import Box from "@mui/material/Box";
 import HomeButton from "./HomeButton";
+import LogoText from "./LogoText";
+import React from "react";
+import { useTheme } from "@mui/material/styles";
 
 const GalleryHeader = () => {
   const theme = useTheme();
   return (
     <>
       <Box
-        position={"fixed"}
-        zIndex={1000}
-        textAlign={{ xs: "center", sm: "left" }}
+        sx={{
+          position: "fixed",
+          left: { xs: "50%", md: theme.spacing(2) },
+          transform: { xs: "translateX(-50%)", md: "none" },
+          zIndex: 999,
+        }}
       >
         <LogoText
           colored={false}
@@ -28,6 +32,7 @@ const GalleryHeader = () => {
           alignItems: "center",
           right: theme.spacing(1),
           bottom: theme.spacing(1),
+          zIndex: 999,
         }}
       >
         <HomeButton />

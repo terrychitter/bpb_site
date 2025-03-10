@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
-import React, { useState, useEffect } from "react";
 import Blob from "./Blob";
+import React, { useEffect, useState } from "react";
+import { Box } from "@mui/material";
 
 const BlobCrowd = () => {
   const [screenWidth, setScreenWidth] = useState<number | null>(null); // Initial state set to null

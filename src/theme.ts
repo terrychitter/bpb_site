@@ -4,14 +4,17 @@ import { TypographyOptions } from "@mui/material/styles/createTypography";
 import { fonts, palette } from "./config/theme";
 
 const bpbFonts: TypographyOptions = {
-  fontFamily: `${fonts.dogicaFont.style.fontFamily}, Arial, sans-serif`,
+  fontFamily: `${fonts.fontFamilyFont.style.fontFamily}, Arial, sans-serif`,
   h1: {
-    fontFamily: `${fonts.daydreamFont.style.fontFamily}, Arial, sans-serif`,
+    fontFamily: `${fonts.headingFont.style.fontFamily}, Arial, sans-serif`,
     fontSize: "3rem",
   },
   h2: {
-    fontFamily: `${fonts.dogicaFont.style.fontFamily}, Arial, sans-serif`,
+    fontFamily: `${fonts.fontFamilyFont.style.fontFamily}, Arial, sans-serif`,
     fontSize: "2rem",
+  },
+  body1: {
+    fontFamily: `${fonts.bodyFont.style.fontFamily}, Arial, sans-serif`,
   },
 };
 

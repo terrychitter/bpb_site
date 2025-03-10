@@ -12,3 +12,7 @@
     font-family: 'Open Sans';
     src: url('/fonts/opensans.ttf') format('truetype');
 }
+
+html {
+    scroll-behavior: smooth;
+}

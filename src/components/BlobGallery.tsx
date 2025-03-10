@@ -55,6 +55,7 @@ const BlobGallery = () => {
         alignItems: "center",
         overflowY: "auto", // Keep this to allow scrolling
         height: "100vh", // Keep this to match your design
+        zIndex: -999,
       }}
     >
       <Box

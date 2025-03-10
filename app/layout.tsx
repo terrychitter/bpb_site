@@ -3,6 +3,8 @@ import text from "@/src/config/text";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import bpbTheme from "@/src/theme";
+import MainFooter from "@/src/components/MainFooter/MainFooter";
+import "../public/globals.css";
 
 export const metadata: Metadata = {
   title: text.mainMetaDataTitle,
@@ -19,7 +21,10 @@ export default function RootLayout({
       <body>
         <AppRouterCacheProvider>
           <CssBaseline />
-          <ThemeProvider theme={bpbTheme}>{children}</ThemeProvider>
+          <ThemeProvider theme={bpbTheme}>
+            {children}
+            <MainFooter />
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

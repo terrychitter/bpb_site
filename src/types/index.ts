@@ -27,3 +27,12 @@ export type BlobJsonType = {
   }[];
   compiler: string;
 };
+
+export interface HomeSectionsProps {
+  backgroundColor: string;
+}
+
+export interface CustomContainerProps {
+  children?: React.ReactNode;
+  backgroundColor?: string;
+}

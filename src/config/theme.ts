@@ -1,23 +1,52 @@
-import {PaletteOptions} from '@mui/material/styles';
-import localFont from 'next/font/local';
+import { PaletteOptions } from "@mui/material/styles";
+import localFont from "next/font/local";
 
-export const palette: PaletteOptions = {
-    mode: 'light',
-    primary: {
-        main: '#F76DC8'
-    },
-    secondary: {
-        main: '#AC66F2'
-    },
-    success: {
-        main: '#07F285'
-    }
+// Extend MUI Palette and PaletteOptions
+declare module "@mui/material/styles" {
+  interface Palette {
+    blue: Palette["primary"];
+    green: Palette["primary"];
+    yellow: Palette["primary"];
+  }
+
+  interface PaletteOptions {
+    blue?: PaletteOptions["primary"];
+    green?: PaletteOptions["primary"];
+    yellow?: PaletteOptions["primary"];
+  }
 }
 
-const daydreamFont = localFont({src: '../../public/fonts/daydream.ttf'});
-const dogicaFont = localFont({src: '../../public/fonts/dogica.ttf'});
+export const palette: PaletteOptions = {
+  mode: "light",
+  common: {
+    black: "#0e1111",
+  },
+  primary: {
+    main: "#F76DC8",
+  },
+  secondary: {
+    main: "#AC66F2",
+  },
+  success: {
+    main: "#07F285",
+  },
+  blue: {
+    main: "#05DBF2",
+  },
+  green: {
+    main: "#07F285",
+  },
+  yellow: {
+    main: "#F7F391",
+  },
+};
+
+const daydreamFont = localFont({ src: "../../public/fonts/daydream.ttf" });
+const dogicaFont = localFont({ src: "../../public/fonts/dogica.ttf" });
+const robotoMonoFont = localFont({ src: "../../public/fonts/roboto_mono.ttf" });
 
 export const fonts = {
-    daydreamFont: daydreamFont,
-    dogicaFont: dogicaFont
-} 
+  headingFont: daydreamFont,
+  fontFamilyFont: dogicaFont,
+  bodyFont: robotoMonoFont,
+};
