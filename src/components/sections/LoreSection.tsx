@@ -4,6 +4,7 @@ import { CustomStack, CustomStackItem } from "./CustomStack";
 import Typography from "@mui/material/Typography";
 import CustomIconButtonWithLink from "../CustomButtonWithLink";
 import text from "@/src/config/text";
+import links from "@/src/config/links";
 
 const LoreSection: React.FC<HomeSectionsProps> = ({ backgroundColor }) => {
   return (
@@ -15,7 +16,7 @@ const LoreSection: React.FC<HomeSectionsProps> = ({ backgroundColor }) => {
           white
           invertImageColor
           link="/lore"
-          src="/ui/link.gif"
+          src={links.public.ui.icons.arrow}
           text={text.home.loreSectionButtonText}
         />
       </CustomStackItem>

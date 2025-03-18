@@ -5,15 +5,10 @@ import Container from "@mui/material/Container";
 import React from "react";
 import LogoText from "./LogoText";
 import RandomTagline from "./RandomTagline";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 import useTheme from "@mui/material/styles/useTheme";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import StartCollectingButton from "./ButtonStartCollecting";
 import BlobCrowd from "./BlobCrowd/BlobCrowd";
-import config from "../config/config";
-import CustomNextLink from "./StylesComponents/CustomLink";
 
 interface DotsProps {
   color: string;
@@ -107,18 +102,6 @@ const HomeHeroSection = () => {
           >
             <RandomTagline />
           </Box>
-          <ButtonGroup
-            variant="outlined"
-            orientation="vertical"
-            sx={{
-              marginBlockStart: theme.spacing(20),
-            }}
-          >
-            <CustomNextLink href="/gallery">
-              <Button color="success">{config.text.home.galleryNavText}</Button>
-            </CustomNextLink>
-            <StartCollectingButton />
-          </ButtonGroup>
         </motion.div>
       </Container>
       <BlobCrowd />

@@ -69,6 +69,10 @@ const text = {
     gallerySectionBody:
       "Check out the gallery and meet all the precious blobs.",
     gallerySectionButtonText: "Check Out",
+    discordSectionTitle: "Join our Discord Server!",
+    discordSectionBody:
+      "Join our server for the latest news and events we have going on.",
+    discordSectionButtonText: "Join Server",
   },
   mainFooter: {
     socialMediaHeadingText: "Join Us",

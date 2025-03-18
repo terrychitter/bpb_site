@@ -4,6 +4,7 @@ import text from "@/src/config/text";
 import Typography from "@mui/material/Typography";
 import { CustomStack, CustomStackItem } from "./CustomStack";
 import { HomeSectionsProps } from "@/src/types";
+import links from "@/src/config/links";
 
 const GallerySection: React.FC<HomeSectionsProps> = ({ backgroundColor }) => {
   return (
@@ -15,7 +16,7 @@ const GallerySection: React.FC<HomeSectionsProps> = ({ backgroundColor }) => {
           white
           invertImageColor
           link="/gallery"
-          src="/ui/link.gif"
+          src={links.public.ui.icons.arrow}
           text={text.home.gallerySectionButtonText}
         />
       </CustomStackItem>

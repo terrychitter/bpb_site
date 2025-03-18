@@ -27,10 +27,20 @@ const FooterSocialMediaSection = () => {
         marginBlockStart={2}
       >
         <Link href={links.socialMediaLinkDiscord} passHref>
-          <Image src="/discord.png" height={40} width={40} alt="discord" />
+          <Image
+            src={links.public.ui.socialMedia.discordPng}
+            height={40}
+            width={40}
+            alt="discord"
+          />
         </Link>
         <Link href={links.socialMediaLinkX} passHref>
-          <Image src="/x.png" height={40} width={40} alt="x (twitter)" />
+          <Image
+            src={links.public.ui.socialMedia.xPng}
+            height={40}
+            width={40}
+            alt="x (twitter)"
+          />
         </Link>
       </Stack>
     </Box>

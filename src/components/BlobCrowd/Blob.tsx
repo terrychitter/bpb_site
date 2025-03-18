@@ -1,5 +1,6 @@
 "use client";
 
+import links from "@/src/config/links";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
@@ -14,7 +15,7 @@ interface BlobProps {
 }
 
 const Blob: React.FC<BlobProps> = ({
-  src = "/blob.png",
+  src = links.public.blobs.placeholderBlob,
   startX,
   bottom,
   initialDirection,

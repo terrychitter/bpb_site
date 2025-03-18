@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@mui/material/Button";
+import Button, { ButtonProps } from "@mui/material/Button";
 import Image from "next/image";
 import React from "react";
 import { useTheme } from "@mui/material/styles";
@@ -12,6 +12,7 @@ interface CustomIconButtonWithLinkProps {
   text: string;
   white?: boolean;
   invertImageColor?: boolean;
+  buttonProps?: ButtonProps;
 }
 
 const CustomIconButtonWithLink: React.FC<CustomIconButtonWithLinkProps> = ({
@@ -20,11 +21,13 @@ const CustomIconButtonWithLink: React.FC<CustomIconButtonWithLinkProps> = ({
   text,
   white = false,
   invertImageColor = false,
+  buttonProps = {},
 }) => {
   const theme = useTheme();
   return (
     <CustomNextLink href={link} passHref>
       <Button
+        {...buttonProps}
         startIcon={
           <Image
             src={src}
@@ -40,6 +43,7 @@ const CustomIconButtonWithLink: React.FC<CustomIconButtonWithLinkProps> = ({
           marginBlockStart: theme.spacing(10),
           color: white ? "white" : theme.palette.text.primary,
           fontWeight: "600",
+          ...(buttonProps?.sx || {}),
         }}
       >
         {text}
