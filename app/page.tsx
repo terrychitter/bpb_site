@@ -1,8 +1,8 @@
-import AboutSection from "@/src/components/Sections/AboutSection";
+import AboutSection from "@/src/components/SubSections/AboutSection";
 import Box from "@mui/material/Box";
-import DiscordSection from "@/src/components/Sections/DiscordSection";
+import DiscordSection from "@/src/components/SubSections/DiscordSection";
 import HomeHeroSection from "@/src/components/HomeHeroSection";
-import LoreGallerySection from "@/src/components/Sections/LoreGallerySection";
+import LoreGallerySection from "@/src/components/SubSections/LoreGallerySection";
 import React from "react";
 
 const BACKGROUNDCOLORS = ["blue", "secondary", "primary", "green", "yellow"];
