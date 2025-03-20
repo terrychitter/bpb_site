@@ -5,7 +5,7 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
-import LegalSection from "../Sections/LegalSection";
+import LegalSection from "./LegalSection";
 import FooterSocialMediaSection from "./FooterSocialMediaSection";
 import FooterNavSection from "./FooterNavSection";
 
