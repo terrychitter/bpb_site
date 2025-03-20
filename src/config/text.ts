@@ -52,10 +52,20 @@ const taglines = [
 
 const text = {
   name: "Big Plumpy Blobs!",
-  mainMetaDataTitle: "BigPlumpyBlobs",
-  mainMetaDataDescription:
-    "Big Plumpy Blobs are here to save the planet, one silly outfit at a time. Collect and trade these adorable aliens on the blockchain!",
   taglines: taglines,
+  metaData: {
+    homeTitle: "BigPlumpyBlobs",
+    homeDescription:
+      "Big Plumpy Blobs are here to save the planet, one silly outfit at a time. Collect and trade these adorable aliens on the blockchain!",
+    notFoundTitle: "Not Found",
+    notFoundDescription: "The page you were looking for could not be found",
+  },
+  notFound: {
+    notFoundTitle1: "Error 404",
+    notFoundTitle2: "Page Not Found",
+    notFoundBody: "The page you were looking for could not be found",
+    notFoundButtonText: "Go Home",
+  },
   home: {
     galleryNavText: "Check Gallery",
     openseaNavText: "Start Collecting",

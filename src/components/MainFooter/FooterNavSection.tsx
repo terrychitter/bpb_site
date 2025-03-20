@@ -25,7 +25,7 @@ const FooterNavSection = () => {
         }}
       >
         <ListItem>
-          <FooterNavItem link="/" text="Top" />
+          <FooterNavItem link="/" text="Home" />
         </ListItem>
         <ListItem>
           <FooterNavItem link="/#about" text="About" />

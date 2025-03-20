@@ -1,14 +1,13 @@
-import type { Metadata } from "next";
+import bpbTheme from "@/src/theme";
 import text from "@/src/config/text";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import bpbTheme from "@/src/theme";
-import MainFooter from "@/src/components/MainFooter/MainFooter";
+import { Metadata } from "next";
 import "../public/globals.css";
 
 export const metadata: Metadata = {
-  title: text.mainMetaDataTitle,
-  description: text.mainMetaDataDescription,
+  title: text.metaData.homeTitle,
+  description: text.metaData.homeDescription,
 };
 
 export default function RootLayout({
@@ -21,10 +20,7 @@ export default function RootLayout({
       <body>
         <AppRouterCacheProvider>
           <CssBaseline />
-          <ThemeProvider theme={bpbTheme}>
-            {children}
-            <MainFooter />
-          </ThemeProvider>
+          <ThemeProvider theme={bpbTheme}>{children}</ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

@@ -28,7 +28,7 @@ const CustomIconButtonWithLink: React.FC<CustomIconButtonWithLinkProps> = ({
     <CustomNextLink href={link} passHref>
       <Button
         {...buttonProps}
-        startIcon={
+        endIcon={
           <Image
             src={src}
             alt={text}

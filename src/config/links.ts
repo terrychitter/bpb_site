@@ -20,6 +20,7 @@ const links = {
     decor: {
       fourPointStarAnim: `${decorPath}/four_point_star.gif`,
       fourPointStarStatic: `${decorPath}/four_point_star.png`,
+      notFound: `${decorPath}/not_found.svg`,
     },
     ui: {
       icons: {
