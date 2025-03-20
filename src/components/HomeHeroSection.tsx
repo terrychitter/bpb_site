@@ -7,7 +7,6 @@ import LogoText from "./LogoText";
 import RandomTagline from "./RandomTagline";
 import { motion } from "framer-motion";
 import useTheme from "@mui/material/styles/useTheme";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import BlobCrowd from "./BlobCrowd/BlobCrowd";
 
 interface DotsProps {
@@ -39,7 +38,7 @@ const Dots: React.FC<DotsProps> = ({ color }) => (
 
 const HomeHeroSection = () => {
   const theme = useTheme();
-  const isMediumScreenOrLarger = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Box
       sx={{
@@ -55,9 +54,9 @@ const HomeHeroSection = () => {
         maxWidth="xl"
         sx={{
           textAlign: "center",
-          marginBlockStart: isMediumScreenOrLarger
-            ? theme.spacing(-10)
-            : theme.spacing(-15),
+          alignItems: "center",
+          width: "100%",
+          height: "100%",
         }}
       >
         <motion.div
@@ -104,7 +103,16 @@ const HomeHeroSection = () => {
           </Box>
         </motion.div>
       </Container>
-      <BlobCrowd />
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          width: "100%",
+        }}
+      >
+        <BlobCrowd />
+      </Box>
     </Box>
   );
 };
