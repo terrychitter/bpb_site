@@ -26,6 +26,8 @@ const links = {
       icons: {
         home: `${uiIconsPath}/home.gif`,
         arrow: `${uiIconsPath}/arrow.gif`,
+        menuHamburger: `${uiIconsPath}/menu_hamburger.gif`,
+        menuClose: `${uiIconsPath}/menu_close.gif`,
         speechBubble: `${uiIconsPath}/speech_bubble.gif`,
       },
       socialMedia: {

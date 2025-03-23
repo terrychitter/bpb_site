@@ -18,7 +18,12 @@ const LogoText: React.FC<LogoTextProps> = ({
 }) => {
   const theme = useTheme();
   return (
-    <Box {...boxProps} sx={{ marginBottom: theme.spacing(3) }}>
+    <Box
+      {...boxProps}
+      sx={{
+        marginBottom: theme.spacing(3),
+      }}
+    >
       <Typography
         variant="h1"
         sx={{

@@ -1,14 +1,16 @@
-"use client";
-
+import GalleryHeader from "@/src/components/Gallery/GalleryHeader";
+import HomeButton from "@/src/components/HomeButton";
+import LogoText from "@/src/components/LogoText";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import GalleryHeader from "@/src/components/GalleryHeader";
-import BlobGallery from "@/src/components/BlobGallery";
 
 const Gallery = () => {
   return (
     <>
       <GalleryHeader />
-      <BlobGallery />
+      <Container>
+        <Typography>Gallery</Typography>
+      </Container>
     </>
   );
 };
