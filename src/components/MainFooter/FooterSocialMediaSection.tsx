@@ -16,6 +16,7 @@ const FooterSocialMediaSection = () => {
       <Typography
         variant="h2"
         fontSize="1.2rem"
+        color="white"
         textAlign={{ xs: "center", md: "left" }}
       >
         {text.mainFooter.socialMediaHeadingText}

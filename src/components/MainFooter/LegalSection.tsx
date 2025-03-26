@@ -14,6 +14,7 @@ const LegalSection = () => {
       sx={{
         marginBlockStart: theme.spacing(4),
         opacity: 0.5,
+        color: "white !important",
       }}
     >
       <Stack
@@ -42,7 +43,9 @@ const LegalSection = () => {
         }}
       />
       <Stack>
-        <Typography variant="body1">{text.mainFooter.copyrightText}</Typography>
+        <Typography variant="body1" color="white">
+          {text.mainFooter.copyrightText}
+        </Typography>
       </Stack>
     </Box>
   );

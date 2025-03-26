@@ -1,0 +1,63 @@
+:root {
+    --font-size-base: 0.75rem;
+    /* Starting font size */
+    --padding-base: 5px;
+    /* Starting padding */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+    padding-inline: var(--padding-base);
+    font-family: 'Dogica', 'Arial', sans-serif;
+    font-size: var(--font-size-base);
+}
+
+/* MUI Breakpoints */
+@media (min-width: 600px) {
+
+    /* sm */
+    .pagination li {
+        font-size: calc(var(--font-size-base) + 0.05rem);
+        padding-inline: calc(var(--padding-base) + 2px);
+    }
+}
+
+@media (min-width: 900px) {
+
+    /* md */
+    .pagination li {
+        font-size: calc(var(--font-size-base) + 0.1rem);
+        padding-inline: calc(var(--padding-base) + 4px);
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* lg */
+    .pagination li {
+        font-size: calc(var(--font-size-base) + 0.15rem);
+        padding-inline: calc(var(--padding-base) + 6px);
+    }
+}
+
+@media (min-width: 1536px) {
+
+    /* xl */
+    .pagination li {
+        font-size: calc(var(--font-size-base) + 0.25rem);
+        padding-inline: calc(var(--padding-base) + 8px);
+    }
+}
+
+.pagination .next,
+.pagination .prev {
+    margin-block-start: "-10px" !important;
+}

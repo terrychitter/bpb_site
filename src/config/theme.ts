@@ -1,3 +1,4 @@
+// Extend MUI Palette and PaletteOptions
 import { PaletteOptions } from "@mui/material/styles";
 import localFont from "next/font/local";
 
@@ -19,7 +20,7 @@ declare module "@mui/material/styles" {
 export const palette: PaletteOptions = {
   mode: "light",
   common: {
-    black: "#0e1111",
+    black: "#2b2b2b", // Define black color in the palette
   },
   primary: {
     main: "#F76DC8",

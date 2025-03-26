@@ -59,6 +59,7 @@ const text = {
       "Big Plumpy Blobs are here to save the planet, one silly outfit at a time. Collect and trade these adorable aliens on the blockchain!",
     notFoundTitle: "Not Found",
     notFoundDescription: "The page you were looking for could not be found",
+    galleryTitle: "Gallery",
   },
   notFound: {
     notFoundTitle1: "Error 404",

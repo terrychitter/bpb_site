@@ -13,6 +13,7 @@ import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import links from "@/src/config/links";
+import { SxProps, Theme } from "@mui/material";
 
 interface MenuItem {
   link: string;
@@ -26,7 +27,7 @@ const menuItems: MenuItem[] = [
   { link: "/lore", text: "LORE" },
 ];
 
-const MenuList: React.FC<{ onClick?: () => void; sx?: any }> = ({
+const MenuList: React.FC<{ onClick?: () => void; sx?: SxProps<Theme> }> = ({
   onClick,
   sx,
 }) => (
@@ -54,6 +55,10 @@ const GalleryHeader = () => {
     <Container
       maxWidth="xl"
       sx={{
+        position: "sticky",
+        top: 0,
+        backgroundColor: "white",
+        zIndex: 1000,
         paddingBlock: {
           xs: 1,
           sm: 2,
@@ -93,14 +98,14 @@ const GalleryHeader = () => {
         {/* Desktop Menu */}
         <MenuList
           sx={{
-            display: { xs: "none", md: "flex" },
+            display: { xs: "none", lg: "flex" },
             flexDirection: "row",
             gap: 2,
           }}
         />
 
         {/* Mobile Menu Button */}
-        <IconButton onClick={toggleMenu(true)} sx={{ display: { md: "none" } }}>
+        <IconButton onClick={toggleMenu(true)} sx={{ display: { lg: "none" } }}>
           <Image
             src={links.public.ui.icons.menuHamburger}
             alt="menu"

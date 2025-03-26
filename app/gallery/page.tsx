@@ -1,16 +1,21 @@
+import GalleryBlobDisplay from "@/src/components/Gallery/GalleryBlobDisplay";
 import GalleryHeader from "@/src/components/Gallery/GalleryHeader";
-import HomeButton from "@/src/components/HomeButton";
-import LogoText from "@/src/components/LogoText";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import MainFooter from "@/src/components/MainFooter/MainFooter";
+import text from "@/src/config/text";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: text.metaData.galleryTitle,
+  description: text.metaData.homeDescription,
+};
 
 const Gallery = () => {
   return (
     <>
       <GalleryHeader />
-      <Container>
-        <Typography>Gallery</Typography>
-      </Container>
+      <GalleryBlobDisplay />
+      <MainFooter />
     </>
   );
 };
